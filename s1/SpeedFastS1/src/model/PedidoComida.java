@@ -1,9 +1,16 @@
 package model;
 
 public class PedidoComida extends Pedido {
+    private static final int TIEMPO_BASE = 15;
+    private static final int MINUTOS_POR_KM = 2;
 
-    public PedidoComida(String idPedido, String direccionEntrega) {
-        super(idPedido, direccionEntrega, "Comida");
+    public PedidoComida(String idPedido, String direccionEntrega, int distanciaKm) {
+        super(idPedido, direccionEntrega, "Comida", distanciaKm);
+    }
+
+    @Override
+    public int calcularTiempoEntrega() {
+        return TIEMPO_BASE + MINUTOS_POR_KM * getDistanciaKm();
     }
 
     @Override
