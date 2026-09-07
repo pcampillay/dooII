@@ -1,0 +1,9 @@
+### IntelliJ IDEA ###
+out/
+.idea/
+
+### Java ###
+*.class
+
+### Mac OS ###
+.DS_Store
