@@ -1,0 +1,3 @@
+db.url=jdbc:mysql://localhost:3306/speedfast_db
+db.user=speedfast_user
+db.password=cambia_esta_clave
